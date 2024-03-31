@@ -34,7 +34,7 @@ export class SideBar extends HTMLElement{
                         mainContent.innerHTML= "<form-register></form-register>";
                         break;
                     case 'PI':
-                        mainContent.innerHTML= "<form-marca></form-marca>";
+                        mainContent.innerHTML= "<primera-infancia></primera-infancia>";
                         break;
                     case 'I':
                         mainContent.innerHTML= "<form-persona></form-persona>";
