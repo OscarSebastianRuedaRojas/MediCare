@@ -50,7 +50,7 @@ export class SideBar extends HTMLElement{
                         mainContent.innerHTML= "<form-estado></form-estado>";
                         break;
                     case 'PL':
-                        mainContent.innerHTML= "<form-estado></form-estado>";
+                        mainContent.innerHTML= "<planificacion-mujeres></planificacion-mujeres>";
                         break;
                 }
                 e.stopImmediatePropagation();
