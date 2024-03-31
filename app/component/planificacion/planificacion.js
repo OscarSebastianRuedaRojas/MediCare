@@ -84,7 +84,7 @@ export class Planificacion extends HTMLElement{
                         <input type="text" id="companerosSexuales" name="companerosSexuales" class="companerosSexuales" placeholder="Añadir Compañeros Sexuales" required>
                     </div>
                 </fieldset>
-                <button type="submit">Enviar</button>
+                <button type="submit" class="boton-degradado">Enviar</button>
             </form>
         </div>
     </div>
