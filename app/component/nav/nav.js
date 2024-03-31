@@ -37,7 +37,7 @@ export class SideBar extends HTMLElement{
                         mainContent.innerHTML= "<primera-infancia></primera-infancia>";
                         break;
                     case 'I':
-                        mainContent.innerHTML= "<form-persona></form-persona>";
+                        mainContent.innerHTML= "<infancia-niños></infancia-niños>";
                         break;
                     case 'A':
                         mainContent.innerHTML= "<form-estado></form-estado>";
