@@ -1,0 +1,120 @@
+.formCard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Aumentado el ancho máximo del formulario */
+    margin: 20px auto;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+.formCard-body {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+legend {
+    text-align: center;
+    font-weight: bold;
+    color: #1ebeb6;
+    font-size: 1.5rem;
+}
+
+.boton-degradado {
+    margin-top: 1rem;
+    background: #1ebeb6; /* Color principal */
+    color: #fff; /* Color del texto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de degradado */
+.boton-degradado::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 80%);
+    transition: all 0.5s ease;
+    z-index: 1;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Efecto de brillo al hacer hover */
+.boton-degradado:hover::before {
+    top: -25%;
+    left: -25%;
+    opacity: 1;
+}
+
+/* Efecto de brillo al hacer click */
+.boton-degradado:active::before {
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    opacity: 0;
+}
+
+/* Estilo del texto dentro del botón */
+.boton-degradado span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Si deseas cambiar el cursor al pasar por el botón */
+.boton-degradado:hover {
+    /* Agrega aquí tu estilo para el hover normal */
+    background: #2fcac9; /* Por ejemplo, un cambio de color */
+}
+
+/* Estilos específicos para el formulario */
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Divide en dos columnas */
+    gap: 20px; /* Espacio entre columnas */
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 2px solid #1ebeb6;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Hace que el padding y el borde se tengan en cuenta para el ancho */
+}
+
+/* Ajuste para los fieldsets que ocuparán toda la fila */
+.full-width {
+    grid-column: span 2; /* Extiende el fieldset a lo largo de dos columnas */
+}
+
+/* Estilos adicionales para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr; /* Cambia a una sola columna en dispositivos móviles */
+    }
+}
+
+

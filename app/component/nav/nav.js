@@ -29,10 +29,6 @@ export class SideBar extends HTMLElement{
             val.addEventListener("click", (e)=>{
                 let data = JSON.parse(e.target.dataset.verocultar)[0];
                 let mainContent = document.querySelector('.mainContent');
-                if (e.target.dataset.verocultar == '["Dn"]') {
-                    console.log("yes");
-                    mainContent.innerHTML= "<home-content></home-content>";
-                }
                 switch (data){
                     case 'H':
                         mainContent.innerHTML= "<form-register></form-register>";
@@ -47,7 +43,7 @@ export class SideBar extends HTMLElement{
                         mainContent.innerHTML= "<form-estado></form-estado>";
                         break;
                     case 'G':
-                        mainContent.innerHTML= "<form-estado></form-estado>";
+                        mainContent.innerHTML= "<gestantes-mujeres></gestantes-mujeres>";
                         break;
                     case 'PL':
                         mainContent.innerHTML= "<planificacion-mujeres></planificacion-mujeres>";
