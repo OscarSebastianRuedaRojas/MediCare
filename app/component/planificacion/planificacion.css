@@ -1,0 +1,53 @@
+/* Estilo para el contenedor del formulario */
+.formCard {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el cuerpo del formulario */
+.formCard-body {
+    text-align: center;
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"],
+input[type="date"],
+select {
+    width: calc(100% - 20px);
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo para el botón de enviar */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para leyenda */
+legend {
+    font-weight: bold;
+}
+
+/* Estilo para el párrafo de texto */
+.text {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #000000;
+}

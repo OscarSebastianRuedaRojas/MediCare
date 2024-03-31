@@ -22,7 +22,6 @@ header{
     background-color: var(--color);
     width: 100%;
     z-index: 1000;
-    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;

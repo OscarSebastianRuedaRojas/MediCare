@@ -28,7 +28,7 @@ export class SideBar extends HTMLElement{
         this.querySelectorAll("a").forEach((val)=>{
             val.addEventListener("click", (e)=>{
                 let data = JSON.parse(e.target.dataset.verocultar)[0];
-                let mainContent = document.querySelector('#mainContent');
+                let mainContent = document.querySelector('.mainContent');
                 if (e.target.dataset.verocultar == '["Dn"]') {
                     console.log("yes");
                     mainContent.innerHTML= "<home-content></home-content>";
