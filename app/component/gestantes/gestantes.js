@@ -10,6 +10,7 @@ export class Gestantes extends HTMLElement{
         </style>
         <div class="formCard">
         <div class="formCard-body">
+            <h1>Gestantes</h1>
             <form id="taskForm">
                 <fieldset class="full-width">
                     <legend style="text-align: center">edad</legend>

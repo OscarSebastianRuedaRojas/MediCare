@@ -10,6 +10,7 @@ export class PrimeraInfancia extends HTMLElement{
         </style>
         <div class="formCard">
         <div class="formCard-body">
+            <h1>Primera Infancia</h1>
             <form id="taskForm">
                 <fieldset>
                 <legend style="text-align: center">Genero</legend>

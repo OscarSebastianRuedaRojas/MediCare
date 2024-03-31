@@ -10,6 +10,7 @@ export class Planificacion extends HTMLElement{
         </style>
         <div class="formCard">
         <div class="formCard-body">
+            <h1>Planificacion</h1>
             <form id="taskForm">
                 <fieldset>
                     <legend style="text-align: center">Ingrese Años</legend>
