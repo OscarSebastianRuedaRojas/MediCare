@@ -1,0 +1,114 @@
+@import url(../../../css/variables.css);
+/* Estilo para el contenedor del formulario */
+/* Estilos generales del formulario */
+#taskForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para los fieldsets */
+fieldset {
+    margin-bottom: 20px;
+    border: 2px solid #1ebeb6;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+legend {
+    text-align: center;
+    font-weight: bold;
+    color: #1ebeb6;
+    font-size: 1.5rem;
+}
+
+/* Estilos para los inputs y selects */
+.form-group {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para el contenedor del botón */
+.boton-container {
+    text-align: center;
+}
+/* Estilos para el botón */
+.boton-degradado {
+    margin-top: 1rem;
+    background: #1ebeb6; /* Color principal */
+    color: #fff; /* Color del texto */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de degradado */
+.boton-degradado::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 80%);
+    transition: all 0.5s ease;
+    z-index: 1;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Efecto de brillo al hacer hover */
+.boton-degradado:hover::before {
+    top: -25%;
+    left: -25%;
+    opacity: 1;
+}
+
+/* Efecto de brillo al hacer click */
+.boton-degradado:active::before {
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    opacity: 0;
+}
+
+/* Estilo del texto dentro del botón */
+.boton-degradado span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Si deseas cambiar el cursor al pasar por el botón */
+.boton-degradado:hover {
+    /* Agrega aquí tu estilo para el hover normal */
+    background: #2fcac9; /* Por ejemplo, un cambio de color */
+}
+
+/* Estilo para el párrafo de texto */
+.text {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #000000;
+}

@@ -31,7 +31,7 @@ export class SideBar extends HTMLElement{
                 let mainContent = document.querySelector('.mainContent');
                 switch (data){
                     case 'H':
-                        mainContent.innerHTML= "<form-register></form-register>";
+                        mainContent.innerHTML= "<home-content></home-content>";
                         break;
                     case 'PI':
                         mainContent.innerHTML= "<primera-infancia></primera-infancia>";
@@ -40,7 +40,7 @@ export class SideBar extends HTMLElement{
                         mainContent.innerHTML= "<infancia-niños></infancia-niños>";
                         break;
                     case 'A':
-                        mainContent.innerHTML= "<form-estado></form-estado>";
+                        mainContent.innerHTML= "<adolescencia-task></adolescencia-task>";
                         break;
                     case 'G':
                         mainContent.innerHTML= "<gestantes-mujeres></gestantes-mujeres>";
